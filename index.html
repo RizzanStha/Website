@@ -1,48 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rijan Shrestha - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f4f4f4;
+      color: #333;
     }
+
     header {
-      background-color: #333;
+      background-color: #1e1e1e;
       color: #fff;
+      padding: 40px 0 20px;
       text-align: center;
-      padding: 20px 0;
     }
-    h1, h2, h3 {
-      margin: 0;
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
     }
+
+    header h2 {
+      font-weight: normal;
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+
+    nav {
+      background-color: #222;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: #ddd;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: #26a69a;
+    }
+
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
-      padding: 20px;
+      padding: 40px 20px;
     }
+
     .section {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
     .portfolio-item {
       background-color: #fff;
       padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
       margin-bottom: 20px;
+      transition: transform 0.2s;
     }
+
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .portfolio-item h3 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      color: #26a69a;
+    }
+
+    .portfolio-item p {
+      margin: 5px 0 0;
+    }
+
     footer {
-      background-color: #333;
-      color: #fff;
+      background-color: #1e1e1e;
+      color: #bbb;
       text-align: center;
-      padding: 10px 0;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .container {
+        padding: 20px 15px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 8px;
+      }
     }
   </style>
 </head>
@@ -50,27 +121,41 @@
 
   <header>
     <h1>Rijan Shrestha</h1>
-    <h2>Graphics Designer &amp; Frontend Developer</h2>
+    <h2>Graphics Designer & Frontend Developer</h2>
   </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
   <div class="container">
     <section class="section" id="about">
       <h2>About Me</h2>
-      <p>I am a passionate graphics designer and frontend developer.</p>
+      <p>Hello! I'm Rijan, a creative graphics designer and frontend developer with a passion for visual storytelling and user-centered design. I love turning ideas into reality through engaging UI and elegant code.</p>
     </section>
 
     <section class="section" id="portfolio">
       <h2>Portfolio</h2>
+
       <div class="portfolio-item">
-        <h3>Project 1</h3>
-        <p>in process.</p>
+        <h3>Project 1: Brand Identity</h3>
+        <p>Creating a full branding kit for a local business, including logo, color palette, typography, and promotional assets.</p>
       </div>
+
       <div class="portfolio-item">
-        <h3>Project 2</h3>
-        <p>in process.</p>
+        <h3>Project 2: Responsive Website</h3>
+        <p>Designed and developed a responsive multi-page website using HTML, CSS, and JavaScript for a travel agency.</p>
       </div>
     </section>
 
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:rijan@example.com">rijan@example.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/rijan" target="_blank">linkedin.com/in/rijan</a></p>
+      <p>GitHub: <a href="https://github.com/rijanshrestha" target="_blank">github.com/rijanshrestha</a></p>
+    </section>
   </div>
 
   <footer>
